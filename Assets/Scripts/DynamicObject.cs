@@ -13,6 +13,24 @@ public class DynamicObject : MonoBehaviour
     [SerializeField][HideInInspector] private float _rotationSpeed;
     [SerializeField][HideInInspector] private float _increasingSizeSpeed;
 
+    private void Update()
+    {
+        if (_isMovingForward)
+        {
+            MoveForward();
+        }
+
+        if (_isRotatingClockwise)
+        {
+            RotateClockwise();
+        }
+
+        if (_isIncreasingSize)
+        {
+            IncreaseSize();
+        }
+    }
+
     private void MoveForward()
     {
         this.transform.position += transform.forward * _movingSpeed * Time.deltaTime;
@@ -29,24 +47,6 @@ public class DynamicObject : MonoBehaviour
         Vector3 sizeStep = new Vector3(0.1f, 0.1f, 0.1f);
 
         this.transform.localScale += sizeStep * _increasingSizeSpeed * Time.deltaTime;
-    }
-
-    private void Update()
-    {
-        if (_isMovingForward)
-        {
-            MoveForward();
-        }
-
-        if (_isRotatingClockwise)
-        {
-            RotateClockwise();
-        }
-            
-        if (_isIncreasingSize)
-        {
-            IncreaseSize();
-        }
     }
 }
 

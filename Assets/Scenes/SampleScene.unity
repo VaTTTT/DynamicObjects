@@ -136,7 +136,6 @@ GameObject:
   - component: {fileID: 113539393}
   - component: {fileID: 113539392}
   - component: {fileID: 113539396}
-  - component: {fileID: 113539397}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -230,28 +229,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &113539396
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113539391}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 979d7e025b932be459ad70ff63f947e2, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &113539397
+--- !u!114 &113539396
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,15 +238,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 113539391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd2731e4958a0b41a5985f6278edeb9, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b70841462cbff84b9af2ac8ecd6b3ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isMovingForward: 1
-  _isRotatingClockwise: 0
-  _isIncreasingSize: 0
-  _movingSpeed: 2
-  _rotationSpeed: 0
-  _increasingSizeSpeed: 0
+  _movingSpeed: 3
 --- !u!1 &496643025
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,8 +466,9 @@ GameObject:
   - component: {fileID: 692907527}
   - component: {fileID: 692907526}
   - component: {fileID: 692907525}
-  - component: {fileID: 692907529}
+  - component: {fileID: 692907531}
   - component: {fileID: 692907530}
+  - component: {fileID: 692907529}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -588,27 +562,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &692907529
-Animator:
-  serializedVersion: 5
+--- !u!114 &692907529
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692907524}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6d99a4a349ecdd645898dbb054f5bc79, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c2341e7684cc74caea1fa648f56394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _increasingSizeSpeed: 3
 --- !u!114 &692907530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,15 +584,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 692907524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd2731e4958a0b41a5985f6278edeb9, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b43ba684dbcf3647879138e48114648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isMovingForward: 1
-  _isRotatingClockwise: 1
-  _isIncreasingSize: 1
-  _movingSpeed: 3
   _rotationSpeed: 3
-  _increasingSizeSpeed: 2
+--- !u!114 &692907531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692907524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b70841462cbff84b9af2ac8ecd6b3ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movingSpeed: 3
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,7 +800,6 @@ GameObject:
   - component: {fileID: 1025369854}
   - component: {fileID: 1025369853}
   - component: {fileID: 1025369857}
-  - component: {fileID: 1025369858}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -922,28 +895,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1025369857
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025369852}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 954a691c700be2742b58c8f68fa81723, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1025369858
+--- !u!114 &1025369857
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -952,15 +904,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1025369852}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd2731e4958a0b41a5985f6278edeb9, type: 3}
+  m_Script: {fileID: 11500000, guid: 48c2341e7684cc74caea1fa648f56394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isMovingForward: 0
-  _isRotatingClockwise: 0
-  _isIncreasingSize: 1
-  _movingSpeed: 0
-  _rotationSpeed: 0
-  _increasingSizeSpeed: 2
+  _increasingSizeSpeed: 3
 --- !u!1 &1373318114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,7 +1026,6 @@ GameObject:
   - component: {fileID: 1389323587}
   - component: {fileID: 1389323586}
   - component: {fileID: 1389323585}
-  - component: {fileID: 1389323584}
   - component: {fileID: 1389323589}
   m_Layer: 0
   m_Name: Cube (1)
@@ -1088,27 +1034,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &1389323584
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1389323583}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6d99a4a349ecdd645898dbb054f5bc79, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!65 &1389323585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1204,15 +1129,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1389323583}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd2731e4958a0b41a5985f6278edeb9, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b43ba684dbcf3647879138e48114648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isMovingForward: 0
-  _isRotatingClockwise: 1
-  _isIncreasingSize: 0
-  _movingSpeed: 0
-  _rotationSpeed: 2
-  _increasingSizeSpeed: 0
+  _rotationSpeed: 3
 --- !u!1 &1912045740
 GameObject:
   m_ObjectHideFlags: 0
