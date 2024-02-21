@@ -26,8 +26,9 @@ public class DynamicObject : MonoBehaviour
 
     private void IncreaseSize()
     {
-        Vector3 changingStep = new Vector3(0.1f, 0.1f, 0.1f);
-        this.transform.localScale += changingStep * _increasingSizeSpeed * Time.deltaTime;
+        Vector3 sizeStep = new Vector3(0.1f, 0.1f, 0.1f);
+
+        this.transform.localScale += sizeStep * _increasingSizeSpeed * Time.deltaTime;
     }
 
     private void Update()
